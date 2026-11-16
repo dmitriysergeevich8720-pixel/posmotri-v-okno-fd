@@ -7,8 +7,9 @@
 html {
   block-size: 100%;
 }
-
+/*1. добавил display: flex;*/
 .page {
+  display: flex;
   inline-size: 1200px;
   block-size: 100%;
   margin: auto;
@@ -16,6 +17,8 @@ html {
   font-family: 'Fira Sans Condensed', sans-serif;
   font-size: 18px;
   background-color: #1b1919;
+  justify-content: center;
+  align-items: center;
 }
 
 h1,
@@ -49,3 +52,108 @@ ol {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background-color: #D9D9D9;
 }
+
+/*создали класс контент и добавили display: flex;*/
+.content{
+  display: flex;
+  align-items: flex-end;
+  max-width: 1140px;
+  gap: 30px;
+}
+/*добавили флекс прижали к верху и распределили росстояние между элементами*/
+.search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.search-form__fieldset-title {
+  font-family: 'Fira Sans Condensed', sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 100%;
+}
+
+.search-form__label-text .visually-hidden {
+
+}
+/*добавили высоту и вертикальный скрол*/
+.content__list-container {
+  height: 298px;
+  overflow-y: auto;
+}
+/*добавили ширину и высоту*/
+.content__details {
+  width: 399px;
+  height: 534px;
+}
+
+.title {
+  font-family: Oswald, sans-serif;
+  width: 700px;
+  font-size: 75px;
+  line-height: 94%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+  color:#FFFFFF;
+}
+
+.content__accent {
+  opacity: 0.2;
+  color: #FFFFFF;
+}
+
+.result__video-container {
+  width: 711px;
+  height: 386px;
+  margin-bottom: 16px;
+}
+
+.result__video {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.content__list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.content__card-link {
+  text-decoration: none;
+  color: #FFFFFF;
+}
+
+.content__video-card {
+  display: flex;
+  align-items: flex-start;
+}
+
+.content__video-card-thumbnail {
+  min-width: 194px;
+  height: 103px;
+  object-fit: cover;
+  object-position: center;
+}
+
+.content__video-card-description-container {
+  flex-grow: 1;
+}
+
+.content__video-card-title {
+
+}
+
+.content__video-card-description {
+
+}
+
+/*остановился на шаге 3*/

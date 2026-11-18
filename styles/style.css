@@ -19,6 +19,7 @@ html {
   background-color: #1b1919;
   justify-content: center;
   align-items: center;
+  height: 800px;
 }
 
 h1,
@@ -69,6 +70,7 @@ ol {
 
 .search-form__fieldset {
   border: 0;
+  width: 225px;
 }
 
 .search-form__fieldset-title {
@@ -226,6 +228,10 @@ ol {
   border-bottom: 1px solid #fff;
   color: #fff;
   outline: none;
+  width: 225px;
+  font-size: 18px;
+  font-family: 'Fira Sans Condensed';
+  font-weight: 400;
 }
 
 .search-form__textfield::placeholder {
@@ -265,6 +271,7 @@ ol {
   color: #fff;
   font-weight: 700;
   font-size: 18px;
+  margin-top: auto;
 }
 
 .search-form__submit-button {

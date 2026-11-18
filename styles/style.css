@@ -79,9 +79,6 @@ ol {
   margin-bottom: 5px;
 }
 
-.search-form__label-text .visually-hidden {
-
-}
 /*добавили высоту и вертикальный скрол*/
 .content__list-container {
   height: 298px;
@@ -109,6 +106,7 @@ ol {
 }
 
 .result__video-container {
+  position: relative;
   width: 711px;
   height: 386px;
   margin-bottom: 16px;
@@ -121,6 +119,7 @@ ol {
 }
 
 .content__list-container {
+  position: relative;
   display: flex;
   flex-direction: column;
   gap: 30px;
@@ -136,6 +135,15 @@ ol {
   display: block;
   text-decoration: none;
   color: #FFF;
+}
+
+.content__card-link:active {
+  background-color: #545050;
+}
+
+.content__card-link:hover .content__video-card-description-container{
+  text-decoration: underline;
+  text-underline-offset: 6px;
 }
 
 .content__video-card {
@@ -158,7 +166,7 @@ ol {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
-  line-height: 100%;
+  /* line-height: 100%; */
   text-transform: uppercase;
   white-space: nowrap;
   overflow: hidden;
@@ -175,7 +183,7 @@ ol {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 .visually-hidden {
@@ -202,6 +210,7 @@ ol {
 
 .search-form__label:hover .search-form__label-text {
   text-decoration: underline;
+  text-underline-offset: 4px;
   cursor: pointer;
 }
 
@@ -224,7 +233,8 @@ ol {
 }
 
 .search-form__label:has(:focus-visible) {
-  border: 1px solid #fff;
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .search-form__pseudo-checkbox {
@@ -271,7 +281,9 @@ ol {
 }
 
 .button:hover {
+  cursor: pointer;
   text-decoration: underline;
+  text-underline-offset: 4px;
 }
 
 .button:active {
@@ -280,10 +292,18 @@ ol {
 
 .button:focus-visible {
   outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .content__card-link_current {
   background-color: #545050;
 }
 
-/* урок 6 состояние карточек */
+.content__list-item {
+  padding: 0 3px;
+}
+
+.content__list-item:focus-visible {
+  outline: 1px #fff solid;
+  outline-offset: 1px;
+}

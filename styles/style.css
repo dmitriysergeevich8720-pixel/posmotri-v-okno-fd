@@ -19,7 +19,7 @@ html {
   background-color: #1b1919;
   justify-content: center;
   align-items: center;
-  height: 800px;
+  min-height: 800px;
 }
 
 h1,
@@ -93,8 +93,8 @@ ol {
 }
 /*добавили ширину и высоту*/
 .content__details {
-  width: 399px;
-  height: 534px;
+  max-width: 399px;
+  min-height: 534px;
 }
 
 .title {
@@ -114,8 +114,8 @@ ol {
 
 .result__video-container {
   position: relative;
-  width: 711px;
-  height: 386px;
+  max-width: 711px;
+  min-height: 386px;
   margin-bottom: 16px;
 }
 
@@ -256,9 +256,9 @@ ol {
   opacity: 0
 }
 
-.search-form__checkbox:checked + .search-form__pseudo-checkbox::after { 
-  opacity: 1; 
-} 
+.search-form__checkbox:checked + .search-form__pseudo-checkbox::after {
+  opacity: 1;
+}
 
 .button {
   border: 1px solid #fff;

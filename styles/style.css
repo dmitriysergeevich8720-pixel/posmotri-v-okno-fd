@@ -19,7 +19,6 @@ html {
   background-color: #1b1919;
   justify-content: center;
   align-items: center;
-  min-height: 800px;
 }
 
 h1,
@@ -60,6 +59,7 @@ ol {
   align-items: flex-end;
   max-width: 1140px;
   gap: 30px;
+  min-height: 556px;
 }
 
 /*добавили флекс прижали к верху и распределили росстояние между элементами*/
@@ -94,7 +94,6 @@ ol {
 /*добавили ширину и высоту*/
 .content__details {
   max-width: 399px;
-  min-height: 534px;
 }
 
 .title {
@@ -109,20 +108,19 @@ ol {
 
 .content__accent {
   opacity: 0.2;
-  color: #FFF;
+  color: #545050;
 }
 
 .result__video-container {
   position: relative;
   max-width: 711px;
-  min-height: 386px;
-  margin-bottom: 16px;
+  margin-bottom: 9px;
 }
 
 .result__video {
   width: 100%;
   height: 100%;
-  object-fit: contain;
+  object-fit: cover;
 }
 
 .content__list {
@@ -143,7 +141,16 @@ ol {
 
 .content__card-link:hover .content__video-card-description-container {
   text-decoration: underline;
-  text-underline-offset: 6px;
+  text-underline-offset: 7px;
+}
+
+.content__card-link:focus {
+  outline: none;
+}
+
+.content__card-link:focus-visible {
+  outline: 1px solid #fff;
+  outline-offset: 1px;
 }
 
 .content__video-card {
@@ -166,13 +173,13 @@ ol {
   font-family: Oswald, sans-serif;
   font-weight: 700;
   font-size: 30px;
-  /* line-height: 100%; */
+  line-height: 100%;
   text-transform: uppercase;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 196px;
-  margin-bottom: 6px;
+  padding-bottom: 6px;
 }
 
 .content__video-card-description {
@@ -183,7 +190,8 @@ ol {
   display: -webkit-box;
   -webkit-line-clamp: 4;
   -webkit-box-orient: vertical;
-  /* overflow: hidden; */
+  overflow: hidden;
+  padding-bottom: 6px;
 }
 
 .visually-hidden {
@@ -226,7 +234,7 @@ ol {
   outline: none;
   width: 225px;
   font-size: 18px;
-  font-family: 'Fira Sans Condensed';
+  font-family: 'Fira Sans Condensed',sans-serif;
   font-weight: 400;
 }
 
@@ -272,15 +280,14 @@ ol {
 
 .search-form__submit-button {
   width: 194px;
-  height: 34px;
   padding: 6px 73.5px;
 }
 
 .more-button {
   width: 100%;
-  height: 34px;
   padding: 6px 142px;
   align-self: flex-end;
+  min-height: 34px;
 }
 
 .button:hover {
@@ -304,9 +311,4 @@ ol {
 
 .content__list-item {
   padding: 0 3px;
-}
-
-.content__list-item:focus-visible {
-  outline: 1px #fff solid;
-  outline-offset: 1px;
 }
